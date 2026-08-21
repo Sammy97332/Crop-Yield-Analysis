@@ -1,0 +1,154 @@
+/* src/components/ResultCard.css */
+.result-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.09);
+}
+
+.result-title {
+  margin: 0 0 1.25rem;
+  color: #111;
+  font-size: 1.15rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+}
+
+.result-section {
+  margin-bottom: 1.5rem;
+}
+
+.result-section h3 {
+  margin: 0 0 0.75rem;
+  color: #1a6b2f;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.recommended-crop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.crop-name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a6b2f;
+}
+
+.crop-confidence {
+  background: #dcfce7;
+  color: #166534;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.result-sub {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin: 0 0 0.5rem;
+}
+
+.yield-block {
+  margin-bottom: 0.75rem;
+}
+
+.yield-block-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #6b7280;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.yield-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0.75rem 0;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.yield-divider::before,
+.yield-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1.5px dashed #e5e7eb;
+}
+.yield-divider span { padding: 0 0.75rem; }
+
+.same-crop-note {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 8px;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.yield-display {
+  text-align: center;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.yield-value {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.yield-unit {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.yield-crop {
+  color: #374151;
+  font-size: 0.9rem;
+  margin: 0.4rem 0 0.75rem;
+}
+
+.yield-interpretation {
+  display: inline-block;
+  color: #fff;
+  padding: 0.35rem 1.1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.result-tips {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  border-radius: 0 8px 8px 0;
+  padding: 0.85rem 1rem;
+}
+
+.tips-title {
+  font-weight: 700;
+  color: #92400e;
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+}
+
+.result-tips ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.result-tips li {
+  font-size: 0.83rem;
+  color: #78350f;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}

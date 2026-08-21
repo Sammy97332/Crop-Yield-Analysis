@@ -1,0 +1,194 @@
+/* src/pages/Predict.css */
+.predict-page { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+.predict-header { margin-bottom: 1.75rem; }
+.predict-header h1 { font-size: 1.6rem; color: #111; margin: 0 0 0.4rem; }
+.predict-header p  { color: #6b7280; margin: 0; font-size: 0.95rem; }
+
+.predict-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Weather autofill */
+.weather-autofill {
+  background: #f0fdf4;
+  border: 1.5px solid #bbf7d0;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.weather-autofill h3 { margin: 0 0 0.75rem; color: #166534; font-size: 0.92rem; }
+
+.autofill-row { display: flex; gap: 0.5rem; }
+.autofill-row input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+}
+.autofill-row input:focus { border-color: #1a6b2f; }
+.autofill-row button {
+  padding: 0.5rem 1rem;
+  background: #1a6b2f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.autofill-row button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.weather-msg { font-size: 0.82rem; color: #166534; margin: 0.5rem 0 0; }
+
+/* Form panel */
+.form-panel {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.form-section { margin-bottom: 1.5rem; }
+.form-section h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a6b2f;
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1.5px solid #e5e7eb;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+
+.form-group { display: flex; flex-direction: column; gap: 0.25rem; }
+
+.form-group label {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.unit-badge {
+  background: #e5e7eb;
+  color: #6b7280;
+  font-size: 0.72rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.5rem 0.75rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus { border-color: #1a6b2f; background: #fff; }
+
+.field-tip { font-size: 0.74rem; color: #9ca3af; }
+
+.checkboxes label { margin-bottom: 0.25rem; }
+.checkbox-row { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.4rem; }
+
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: #374151;
+  cursor: pointer;
+  font-weight: 500 !important;
+}
+.check-label input[type="checkbox"] { width: 16px; height: 16px; accent-color: #1a6b2f; }
+
+.form-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.form-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+.btn-predict {
+  flex: 1;
+  padding: 0.7rem 1.25rem;
+  background: #1a6b2f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-predict:hover:not(:disabled) { background: #155724; }
+.btn-predict:disabled { opacity: 0.65; cursor: not-allowed; }
+
+.btn-example {
+  padding: 0.7rem 1rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1.5px solid #bfdbfe;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-example:hover { background: #dbeafe; }
+
+.btn-reset {
+  padding: 0.7rem 1rem;
+  background: #f9fafb;
+  color: #6b7280;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-reset:hover { background: #f3f4f6; }
+
+/* Result panel */
+.result-panel { position: sticky; top: 80px; }
+
+.result-placeholder {
+  background: #fff;
+  border-radius: 14px;
+  padding: 3rem 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  text-align: center;
+  color: #9ca3af;
+}
+
+.placeholder-icon { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.result-placeholder p { margin: 0; font-size: 0.92rem; line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .predict-layout { grid-template-columns: 1fr; }
+  .result-panel   { position: static; }
+  .form-grid      { grid-template-columns: 1fr; }
+}
