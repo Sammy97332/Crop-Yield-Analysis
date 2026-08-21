@@ -9,7 +9,8 @@
 > Final Year Project — BSc Industrial Software Engineering  
 > Pentecost University, Kojokrom | 2024/2025  
 > **Student:** Nkrumah Samuel Kojo | **ID:** PUIS/23210007  
-> **Supervisor:** Dr. Michael A. Nartey
+> **Student:** Somuah Oscar Kwabena | **ID:** PUIS/23210027
+**Supervisor:** Dr. Michael A. Nartey
 
 ---
 
