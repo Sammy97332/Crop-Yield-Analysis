@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: crop-yield-api
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && python app.py
+    envVars:
+      - key: OWM_API_KEY
+        value: 9f43e2ecc64258a17a8c2c64fd3af6a3
