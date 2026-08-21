@@ -39,7 +39,7 @@ yield_features = joblib.load(os.path.join(MODEL_DIR, "yield_feature_columns.pkl"
 print("✅ All models loaded.")
 
 # ── OpenWeatherMap Config ─────────────────────────────────
-OWM_API_KEY = os.environ.get("OWM_API_KEY", "YOUR_API_KEY_HERE")
+OWM_API_KEY = os.environ.get("OWM_API_KEY", "9f43e2ecc64258a17a8c2c64fd3af6a3")
 OWM_URL     = "https://api.openweathermap.org/data/2.5/weather"
 
 # ── Supported crops for yield model ──────────────────────
